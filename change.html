@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Trello</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"/>
+
+</head>
+
+
+<body>
+
+<header>
+    <h1 id="page-header">Trello</h1>
+</header>
+
+
+<aside>
+    <div id="div-aside">
+        <p>2 клика = удалить карточку</p>
+        <p>3 клика = удалить доску</p>
+        <p>Зажатие карточки = перенос</p>
+    </div>
+
+    <div id="div-aside-down">
+        <p>/n планы на будущее:</p>
+        <p>Добавить перемещение досок</p>
+        <p>Активировать все действия на моб. устройства</p>
+    </div>
+
+</aside>
+
+
+<main>
+    <div class="boards">
+        <div class="boards__item">
+
+            <input id="title" placeholder="Введите название" contenteditable="true" >
+            <div class="list">
+                <div class="list__item" draggable="true"> Стартовая карточка</div>
+            </div>
+
+            <div class="form">
+                <input placeholder="Введите название для этой карточки" contenteditable="true" class="textarea">
+
+                <div class="buttons">
+                    <button class="add__item-btn">Добавить карточку</button>
+                    <button class="cancel__item-btn">Отменет</button>
+                </div>
+            </div>
+
+
+            <div class="add__bth"><span> + </span> Добавить карточку</div>
+        </div>
+    </div>
+    <div class="button"> Добавить доску</div>
+</main>
+
+
+    <script src="mainJS.js"></script>
+</body>
+</html>
